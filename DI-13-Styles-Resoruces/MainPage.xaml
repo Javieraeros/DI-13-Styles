@@ -6,8 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <Page.Resources>
+        <LinearGradientBrush x:Key="buttonBackground">
+            <GradientStop Offset="0" Color="Silver"/>
+            <GradientStop Offset="1" Color="Orange"/>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Content="Soy un Botón muy chu chu chuuuli" 
+                Background="{StaticResource buttonBackground}"
+                >
+        </Button>
+        <Button Content="Soy un Botón muy chu chu chuuuli" 
+                Background="{StaticResource buttonBackgroundApp}"
+                >
+        </Button>
+        <Button Content="Soy un Botón muy chu chu chuuuli" 
+                Background="{StaticResource buttonBackgroundDiccionario}"
+                >
+        </Button>
+        
+    </StackPanel>
 </Page>
