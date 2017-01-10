@@ -1,0 +1,28 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Styles_3Botones.Diccionarios">
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="Aquamarine"></Setter>
+        <Setter Property="Control.FontFamily" Value="Italic"></Setter>
+        <Setter Property="Margin" Value="20"></Setter>
+        <Setter Property="Padding" Value="10"></Setter>
+    </Style>
+    <Style x:Key="MiEstilo" TargetType="Button">
+        <Setter Property="Background" Value="Aquamarine"></Setter>
+        <Setter Property="FontFamily" Value="Italic"></Setter>
+        <Setter Property="Margin" Value="20"></Setter>
+        <Setter Property="Padding" Value="10"></Setter>
+    </Style>
+    <Style BasedOn="{StaticResource MiEstilo}" x:Key="estiloHijo" TargetType="Button">
+        <Setter Property="Foreground" Value="Green"></Setter>
+    </Style>
+
+    <Style x:Key="Pisa" TargetType="Button">
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <RotateTransform Angle="-78"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

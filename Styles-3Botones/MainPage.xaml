@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="Styles_3Botones.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Styles_3Botones"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Content="Boton estilo 1"></Button>
+        <Button Content="Boton estilo 2"></Button>
+        <Button Content="Boton sin estilo" Style="{StaticResource estiloHijo}"></Button>
+        <Button Content="Torre de Pisa" Style="{StaticResource Pisa}"></Button>
+    </StackPanel>
+</Page>
